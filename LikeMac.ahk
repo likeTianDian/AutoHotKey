@@ -21,19 +21,3 @@
 ; !W::Send, !{F4}    ; Cmd + W (关闭窗口 - 另一个映射)
 !n::Send, ^n       ; Cmd + N (新建窗口)
 !^Escape::Send, ^+{Escape} ; Cmd + Option + Esc (打开任务管理器)
-
-; 切换窗口
-; 按下 Alt + Tab，按住 Alt 键
-!Tab::
-    Send, {Alt Down}{Tab}
-return
-
-; 按下 Alt + ~，按住 Alt 键
-!`::
-    Send, {Alt Down}+{Tab}
-return
-
-; 松开 Alt 键
-~LAlt Up::
-    Send, {Alt Up}
-return
